@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/ihoioi"
+            app:elevation="2dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+
+                    android:src="@drawable/back_icon"
+                    android:translationZ="100dp"
+                    app:tint='@color/logo_bg_color'>
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/main_home_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/splinesans"
+                    android:gravity="center"
+                    android:letterSpacing="1"
+                    android:text="support"
+                    android:textAllCaps="true"
+                    android:textColor="@color/logo_bg_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+
+            android:background="@color/grey"
+            >
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Create Support Ticket"
+                android:textSize="16dp"
+                android:fontFamily="@font/splinesans"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"
+
+                >
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Ticket"
+                app:boxStrokeColor="@color/divider"
+                app:boxStrokeWidth="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:errorTextColor="@color/error"
+                android:textColorHint="@color/secondaryText"
+                app:boxCornerRadiusBottomEnd="5dp"
+
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/support_titleEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+                    android:fontFamily="@font/splinesans"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:hint="Pull Your Message"
+                app:boxStrokeColor="@color/divider"
+                android:id="@+id/knlbio"
+                app:boxStrokeWidth="1dp"
+                android:layout_marginTop="10dp"
+                app:errorTextColor="@color/error"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/secondaryText"
+                app:boxCornerRadiusBottomEnd="5dp"
+
+
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/support_descEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete"
+                    android:fontFamily="@font/splinesans"
+                    android:textStyle="bold"
+                    android:gravity="start"
+
+                    android:textColor="@color/primaryText"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:id="@+id/saveChangesButton"
+                android:layout_gravity="center"
+                android:background="@drawable/new_yellow_square_button"
+                android:fontFamily="@font/splinesans"
+                android:text="Done"
+                app:backgroundTint="@null"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

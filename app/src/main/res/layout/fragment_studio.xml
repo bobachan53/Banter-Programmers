@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/addimagesbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeImage_imagePreviewRecyclerview"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/outline_black"
+            android:fontFamily="@font/splinesans"
+            android:padding="10dp"
+            android:text="Click To Add Your Images"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/changeImage_imagePreviewRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/changeImage_upload_addimageButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:background="@drawable/outline_black">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Enter Ocassion"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/splinesans"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_blue_cure"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <EditText
+                android:id="@+id/pccassionEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:background="#00000000"
+                android:fontFamily="@font/splinesans"
+                android:hint="Ocassion"
+                android:focusedByDefault="true"
+
+                android:maxLength="20"
+                android:inputType="textAutoComplete"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Enter Budget"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/splinesans"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_blue_cure"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <EditText
+                android:id="@+id/budgetEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:background="#00000000"
+                android:fontFamily="@font/splinesans"
+                android:hint="Budget"
+                android:focusedByDefault="true"
+
+                android:maxLength="20"
+                android:inputType="textAutoComplete"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Enter Chest Size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/splinesans"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_blue_cure"
+            android:orientation="horizontal"
+            android:padding="10sp">
+            <EditText
+                android:id="@+id/chestSizeEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:background="#00000000"
+                android:fontFamily="@font/splinesans"
+                android:hint="Chest"
+                android:focusedByDefault="true"
+
+                android:maxLength="20"
+                android:inputType="textAutoComplete"
+                android:textColor="@color/black"
+                android:textColorHint="#9b9b9b"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:id="@+id/saveChangesButton"
+            android:layout_gravity="center"
+            android:background="@drawable/new_yellow_square_button"
+            android:fontFamily="@font/splinesans"
+            android:text="Get Suggestions"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

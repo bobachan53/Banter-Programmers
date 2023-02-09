@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startup.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ihoioi"
+        app:elevation="2dp"
+
+
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/logo_bg_color"
+
+
+            >
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:src="@drawable/back_icon"
+                android:translationZ="100dp"
+                app:tint='@color/white'>
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/main_home_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/splinesans"
+                android:gravity="center"
+                android:letterSpacing="1"
+                android:text="PAYMENT"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="@color/grey"
+        android:layout_below="@+id/ihoioi"
+        android:id="@+id/kbibiobi"
+        >
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/kbibiobi"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/iboib"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/outline_black">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/lb_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentTop="true"
+
+
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="left"
+                android:text="You are sending"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/payment_amounttextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_tv1"
+
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/splinesans_bold"
+                android:text="$55888"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+
+
+            android:src="@drawable/right_arrow_icon"
+            android:translationZ="100dp">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/lb_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_centerInParent="true"
+
+
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="left"
+
+                android:text="TO"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:textSize="13sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/payment_recieverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_tv2"
+
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/splinesans"
+                android:text="Mr. Adam"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lb_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iboib"
+
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="left"
+        android:text="Debit From"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lb_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lb_tv3"
+
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/splinesans"
+        android:gravity="left"
+        android:text="MisteOne Wallet"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lb_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lb_tv3"
+
+
+
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/wallet_balancetextview"
+        android:fontFamily="@font/splinesans"
+        android:gravity="left"
+        android:text="Avl.bal."
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrey1"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/wallet_balancetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lb_tv3"
+        android:layout_alignParentRight="true"
+
+
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/splinesans"
+        android:gravity="left"
+        android:text="$5555"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="@color/grey"
+        android:layout_below="@+id/wallet_balancetextview"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pibiob"
+
+        >
+
+    </View>
+
+    <TextView
+        android:id="@+id/lb_tv6"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pibiob"
+
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/splinesans_bold"
+        android:text="PAST TRANSACTIONS"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/new_yellow_square_button2"
+        android:fontFamily="@font/splinesans"
+        android:text="PAY"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+
+</RelativeLayout>

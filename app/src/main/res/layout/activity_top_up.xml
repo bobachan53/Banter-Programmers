@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startup.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ihoioi"
+        app:elevation="2dp"
+
+
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/logo_bg_color"
+
+
+            >
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:src="@drawable/back_icon"
+                android:translationZ="100dp"
+                app:tint='@color/white'>
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/main_home_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/splinesans"
+                android:gravity="center"
+                android:letterSpacing="1"
+                android:text="TOP UP"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="@color/grey"
+        android:layout_below="@+id/ihoioi"
+        android:id="@+id/kbibiobi"
+        >
+
+    </View>
+
+    <TextView
+        android:id="@+id/lb_tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/splinesans_bold"
+        android:gravity="left"
+        android:layout_below="@+id/kbibiobi"
+        android:text="TOP UP WALLET"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/iboib"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lb_tv6"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/ruppee_imageview"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+
+
+            android:layout_alignParentLeft="true"
+
+
+            android:layout_marginTop="5dp"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/rupee_icon"
+
+            app:tint='@color/colorGrey1'>
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/amountEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ruppee_imageview"
+            android:background="@null"
+            android:maxLength="7"
+            android:inputType="number"
+            android:fontFamily="@font/splinesans_bold"
+            android:gravity="left"
+            android:hint="ENTER AMOUNT"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <View
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ruppee_imageview"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey">
+
+        </View>
+
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/new_yellow_square_button2"
+            android:fontFamily="@font/splinesans"
+            android:text="PROCEED"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@null" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>

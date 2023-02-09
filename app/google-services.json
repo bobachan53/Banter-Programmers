@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "135422887823",
+    "firebase_url": "https://misteonedb-default-rtdb.firebaseio.com",
+    "project_id": "misteonedb",
+    "storage_bucket": "misteonedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135422887823:android:ae1fd6fe305f2d22b42dfa",
+        "android_client_info": {
+          "package_name": "com.miste.one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135422887823-1anh6hbbh35buj9ujtbdd1nmm5aa8877.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miste.one",
+            "certificate_hash": "340470b8899be86866d7be3efaad59c21ad2e01d"
+          }
+        },
+        {
+          "client_id": "135422887823-t9tj8s9tust81sfnnoagt2v23h43u281.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOCXb49vbKshFwy7xw4H2RaPqNqyfWZKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135422887823-t9tj8s9tust81sfnnoagt2v23h43u281.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

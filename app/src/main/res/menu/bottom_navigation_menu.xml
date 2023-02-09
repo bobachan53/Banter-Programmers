@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_studio"
+        android:icon="@drawable/studio_icon"
+        android:title="STYLE" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:title="HOME"/>
+
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_logo"-->
+    <!--        android:icon="@drawable/new_logo"-->
+    <!--        tools:ignore="MenuTitle" />-->
+
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_notification"-->
+    <!--        android:icon="@drawable/bell_nav_icon"-->
+    <!--        tools:ignore="MenuTitle"/>-->
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="PROFILE" />
+</menu>
