@@ -8,6 +8,7 @@ import static android.Manifest.permission.GET_ACCOUNTS;
 import static android.Manifest.permission.INTERNET;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -52,6 +53,7 @@ public class HomeActivity extends AppCompatActivity {
             DisplayMetrics.DENSITY_560,
             DisplayMetrics.DENSITY_XXXHIGH
     };
+// resolution change
 
     @TargetApi(Build.VERSION_CODES.N_MR1)
     private static final int[] ORDERED_DENSITY_DP_N_MR1 = {
